@@ -1,0 +1,141 @@
+/*Personalização*/
+
+html,
+body {
+    margin: 0;
+    font-weight: 600;
+    background-color: #000000;
+}
+
+button{
+    font-size: 10px;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+}
+
+.container-fluid{
+    height: 100vh;
+    width: 100vw;
+}
+
+#timeA{
+    background-color: #0000ff;
+    text-align: left;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+#timeA #pontuacao{
+    background-color: #38761d;
+    color: #fff;
+    text-align: center;
+    
+}
+
+#EquipeA{
+	border: none;
+	background: #0000FF;
+    font-size: 1vw;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+#AtletaA{
+    border: none;
+	background: #0000FF;
+    font-size: 2vw;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#timeB{
+    background-color: #fff;
+    text-align: left;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff
+}
+
+#timeB #pontuacao{
+    background-color: #38761d;
+    color: #fff;
+    text-align: center;
+}
+
+#EquipeB{
+	border: none;
+	background: #FFF;
+    font-size: 1vw;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+#AtletaB{
+    border: none;
+	background: #FFF;
+    font-size: 2vw;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#relogio{
+    background-color: #000;
+    text-align: center;
+}
+
+#vantagens{
+    background-color: #c9c912;
+     text-align: center;
+	 color: #fff;
+}
+
+#punicoes{
+    background-color: #cc0000;
+    text-align: center;
+	color: #fff;
+}
+
+#numeroA, #numeroB, #numeroAV, #numeroBV, #numeroAP, #numeroBP  {
+    font-size: 20vh;
+}
+
+#menu{
+    letter-spacing: 5px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+   padding: 15px;
+   max-width: 100%;
+   height: auto;
+}
+
+#cronometro{
+    font-size: 3vh;
+    color: #33a000;
+}
+
+#tempo #mostrarValor{
+    font-weight: 400;
+    font-size: 20vh;
+    color: #33a000;
+    background-color: #000;
+    border: none;
+}
+
+#tempo #mostrarValor{
+    font-weight: 400;
+    font-size: 20vh;
+    color: #33a000;
+    background-color: #000;
+    border: none;
+    animation: fade 10000ms infinite;
+}

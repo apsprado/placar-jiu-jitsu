@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PLACAR JIU-JITSU</title>
+
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row" id="timeA">
+            <div class="col-md-5">
+              <input class="text-left" id="AtletaA" value="NOME DO ATLETA A" />
+              <input class="text-left" id="EquipeA" value="NOME DA EQUIPE A" />
+            </div>
+            <div class="col-md-3" id="pontuacao">
+              <div class="row">
+                <div class="col-md-12" id="numeroA">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button value="2" onclick="pontoA('2')">+2</button>
+                  <button value="3" onclick="pontoA('3')">+3</button>
+                  <button value="4" onclick="pontoA('4')">+4</button>
+                  <button value="-2" onclick="pontoA('-2')">-2</button>
+                  <button value="-3" onclick="pontoA('-3')">-3</button>
+                  <button value="-4" onclick="pontoA('-4')">-4</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="vantagens">
+              <div class="row">
+                <div class="col-md-12" id="numeroAV">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button value="1" onclick="vantagemA('1')">+1</button>
+                  <button value="1" onclick="vantagemA('0')">-1</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="punicoes">
+              <div class="row">
+                <div class="col-md-12" id="numeroAP">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button onclick="punicaoA('1')">+1</button>
+                  <button onclick="punicaoA('0')">-1</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="timeB">
+            <div class="col-md-5">
+              <input class="text-left" id="AtletaB" value="NOME DO ATLETA B" />
+              <input class="text-left" id="EquipeB" value="NOME DA EQUIPE B" />
+            </div>
+            <div class="col-md-3" id="pontuacao">
+              <div class="row">
+                <div class="col-md-12" id="numeroB">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button value="2" onclick="pontoB('2')">+2</button>
+                  <button value="3" onclick="pontoB('3')">+3</button>
+                  <button value="4" onclick="pontoB('4')">+4</button>
+                  <button value="-2" onclick="pontoB('-2')">-2</button>
+                  <button value="-3" onclick="pontoB('-3')">-3</button>
+                  <button value="-4" onclick="pontoB('-4')">-4</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="vantagens">
+              <div class="row">
+                <div class="col-md-12" id="numeroBV">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button onclick="vantagemB('1')">+1</button>
+                  <button onclick="vantagemB('0')">-1</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="punicoes">
+              <div class="row">
+                <div class="col-md-12" id="numeroBP">0</div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="menu">
+                  <button onclick="punicaoB('1')">+1</button>
+                  <button onclick="punicaoB('0')">-1</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="relogio">
+            <div class="col-md-4" id="logo">
+              <img src="bjjlogo.png" />
+            </div>
+            <div class="col-md-4" id="cronometro">
+              <fieldset>
+                <legend>Cronômetro</legend>
+                <label for="min">MIN: &nbsp;&nbsp;</label>
+                <input type="text" id="min" size="2" maxlength="3" />
+                <label for="seg">SEG:</label>
+                <input type="text" id="seg" size="2" maxlength="2" />
+                <p>
+                  <input
+                    class="btn"
+                    type="button"
+                    value="INICIAR"
+                    id="btnIniciar"
+                    onclick="IniciarCronometro('start')"
+                  />
+                  <input
+                    class="btn"
+                    type="button"
+                    value="PAUSAR"
+                    id="btnPausar"
+                    onclick="PausarCronometro()"
+                    disabled="disabled"
+                  />
+                  <input
+                    class="btn"
+                    type="button"
+                    value="RESETAR"
+                    id="btnResetar"
+                    onclick="ResetarCronometro()"
+                    disabled="disabled"
+                  />
+                </p>
+              </fieldset>
+            </div>
+            <div class="col-md-4" id="tempo">
+              <input
+                class="mostrarValor"
+                type="text"
+                id="mostrarValor"
+                size="2"
+                readonly="readonly"
+                value="00:00"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/cronos.js"></script>
+    <script src="js/placar.js"></script>
+  </body>
+</html>
